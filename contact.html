@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Project</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/fontawesome/css/all.min.css">
+    <script src="assets/jquery.slim.min.js"></script>
+    <script src="assets/popper.min.js"></script>
+    <script src="assets/bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+   
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+</head>
+<body>
+  
+    <header  x-data="{navShow : false }" @scroll.window="navShow = window.scrollY > 100 ? true : false ">
+    <nav class="navbar mb-5 header-scrolled navbar-expand-lg navbar-dark bg-muted border-bottom shadow fixed-top" :class="{'header-scrolled' : navShow}">
+      <div class="container">
+        <a class="navbar-brand fs-3 fw-bold me-5 logo" href="index.html">Ultraviolet</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-5 ">
+            <li class="nav-item mx-4"><a href="index.html" class="nav-link ">Home</a></li>
+            <li class="nav-item  mx-4"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item  mx-4"><a href="services.html" class="nav-link">Services</a></li>
+            <li class="nav-item  mx-4"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+            <li class="nav-item  mx-4"><a href="team.html" class="nav-link">Team</a></li>
+            <li class="nav-item  mx-4"><a href="blog.html" class="nav-link">Blog</a></li>
+            <li class="nav-item  mx-4"><a href="contact.html" class="nav-link active">Contact</a></li>
+            <a href="./index.html#book-a-table" class="btn btn-outline-warning book-button  ms-5 px-3">Book a table</a>
+            <li class="nav-item"><a href="reservation.html" class="nav-link"></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+</header>
+<section class="sec text-center">
+  <h1 class="display-1 fw-bold text-dark rounded-pill px-0" style="-webkit-text-stroke: 3px white; text-shadow: 4px 4px 2px #ffc107; width: 70%;margin: auto;" data-aos="fade-up" data-aos-delay="150">Contact Us</h1></section>
+
+          <!----------------------------Contact Section-------------------------->
+
+    <section class="contact-section"> 
+    <div class="container">
+                 
+        <div class="row mt-5">
+          <div class="col-lg-4">
+            <div class="text-center text-md-start">
+              <img src="avataaars.svg" width="200px" height="200px" data-aos="fade-up" data-aos-delay="200">
+            </div>
+
+              <div class="d-flex align-items-center mt-4">
+                <i class="fa fa-search-location me-3 text-warning fs-5 bg-secondary rounded-pill p-3"></i>
+                <div><h4 class="text-dark fw-dolder ">Location:</h4>
+                <p class="lead text-secondary">A108 Adam Street, New York, NY 535022</p>
+                </div> 
+              </div>
+
+              <div class="d-flex align-items-center">
+                <i class="fa fa-clock me-3 text-warning fs-5 bg-secondary rounded-pill p-3 "></i>
+                 <div><h4 class="text-dark fw-dolder ">Open Hours:</h4>
+                <p class="lead text-secondary"> Monday-Saturday:<br>
+                  11:00 AM - 2300 PM</p>
+                 </div>
+                </div>
+                
+              <div class="d-flex align-items-center">
+                <i class="fa fa-envelope me-3 text-warning fs-5 bg-secondary rounded-pill p-3"></i>
+                <div><h4 class="text-dark fw-dolder ">Email:</h4>
+                <p class="lead text-secondary">info@example.com</p>
+              </div>
+              </div>  
+            
+              <div class="d-flex align-items-center">
+                <i class="fa fa-phone me-3 text-warning fs-5 bg-secondary rounded-pill p-3"></i>
+                <div><h4 class="text-dark fw-dolder ">Call:</h4>
+                <p class="lead text-secondary">+1 5589 55488 55s</p>
+                </div>
+              </div>  
+             </div> 
+         
+          <div class="col-lg-8 mt-5 mt-lg-0">
+            <div class="row">
+              <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+               </div>
+            <!-------------------------form--------------------------->
+              <div class="row align-items-center mt-3">
+                <div class="col-md-6 form-group">
+                  <form>
+                  <div class="form-floating">
+                  <input type="text" class="form-control border border-1 border-warning" placeholder="Inter your name " required>
+                  <label>Your name</label>
+                </div>
+              </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <div class="form-floating">
+                    <input type="email" class="form-control border border-1 border-warning" placeholder="Email" required>
+                    <label>Your Email</label>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <div class="form-floating mb-4">
+                  <input type="text" class="form-control border border-1 border-warning" placeholder="Subject" required>
+                  <label>Subject</label>
+              </div>
+              <div class="form-group mt-3">   
+                <div class="form-floating mb-4">
+                <textarea class="form-control border border-1 border-warning" placeholder="Message" required style="height: 140px;"></textarea>
+                <label>Message</label>
+              </div>
+              <div class="my-3 text-center">
+                <button type="submit" class="btn btn-outline-warning px-4" data-aos="fade-up" data-aos-delay="100">Send Message</button></div>
+              </form>
+            </div>
+        </div>
+      </div>
+    </section>
+
+         <!----------------------------Footer Section---------------------------->
+        
+ <footer class="bg-dark text-light pt-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-3 col-md-6 text-center text-md-start">
+        <div class="footer-info">
+          <h1 class="mb-4">Ultraviolet</h1>
+          <p>
+            <i class="fa fa-search-location text-warning me-2 fs-3">
+            </i> A108 Adam Street <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NY 535022, USA<br><br>
+            <i class="fa fa-phone text-warning me-2 fs-3"> </i>    <strong> Phone:</strong> +1 5589 55488 55<br><br>
+            <i class="fa fa-envelope text-warning me-2 fs-3"> </i> <strong>Email:</strong> info@example.com<br>
+          </p>
+          </div>
+          </div>  
+          <div class="col-lg-3 col-md-6 text-center px-5">
+            <h3 class="py-3">Open Hours</h3>
+            <div class="row mt-1 text-center text-md-start">
+              <div class="col">Saturday</div>
+              <div class="col">9:00 - 02:00</div>
+            </div>
+            <div class="row text-center text-md-start">
+              <div class="col">Sunday</div>
+              <div class="col">9:00 - 02:00</div>
+            </div>
+            <div class="row text-center text-md-start">
+              <div class="col">Monday</div>
+              <div class="col">9:00 - 24:00</div>
+            </div>
+            <div class="row text-center text-md-start">
+              <div class="col">Tuesday</div>
+              <div class="col">9:00 - 24:00</div>
+            </div>
+            <div class="row text-center text-md-start">
+              <div class="col">Wednesday</div>
+              <div class="col">9:00 - 24:00</div>
+            </div>
+            <div class="row text-center text-md-start">
+              <div class="col">Thursday</div>
+              <div class="col">9:00 - 24:00</div>
+            </div>
+            <div class="row text-center text-md-start">
+              <div class="col">Friday</div>
+              <div class="col">9:00 - 02:00</div>
+            </div> 
+      </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <h3 class="pb-4 mt-3">Follow Us</h3>
+            <a href="#"><i class="fab fa-twitter icon mt-0"></i></a>
+            <a href="#"><i class="fab fa-facebook-f icon mt-0 px-3 py-3"></i></a><br>
+            <a href="#"><i class="fab fa-instagram icon"></i></a>
+            <a href="#"><i class="fab fa-google icon"></i></a><br>
+            <a href="#"><i class="fab fa-linkedin-in icon"></i></a>
+            <a href="#"><i class="fab fa-telegram-plane icon"></i></a>
+          </div>
+          </div>
+          </div>
+</footer>
+
+    <script src="./bootstrap-5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+      
+</body>
+</html>
