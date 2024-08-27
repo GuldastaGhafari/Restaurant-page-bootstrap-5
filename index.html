@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Project</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/fontawesome/css/all.min.css">
+    <script src="assets/jquery.slim.min.js"></script>
+    <script src="assets/popper.min.js"></script>
+    <script src="assets/bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+</head>
+
+<body>
+  <header x-data="{navShow : false }" @scroll.window="navShow = window.scrollY > 100 ? true : false ">
+  <nav class="navbar header-scrolled navbar-expand-lg fixed-top navbar-dark  border-bottom shadow " :class="{'header-scrolled' : navShow}">
+    <div class="container">
+      <a class="navbar-brand fs-3 fw-bold me-5 logo" href="index.html">Ultraviolet</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-5">
+          <li class="nav-item mx-4"><a href="index.html" class="nav-link active">Home</a></li>
+          <li class="nav-item  mx-4"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item  mx-4"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item  mx-4"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li class="nav-item  mx-4"><a href="team.html" class="nav-link">Team</a></li>
+          <li class="nav-item  mx-4"><a href="blog.html" class="nav-link">Blog</a></li>
+          <li class="nav-item  mx-4"><a href="contact.html" class="nav-link">Contact</a></li>
+          <a href="#book-a-table" class="btn btn-outline-warning book-button text-white ms-5 px-3">Book a table</a>
+          <li class="nav-item"><a href="reservation.html" class="nav-link"></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+                  <!--------------Carousel Section---------------------------- -->
+
+    <div id="salid" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="height: 700px;">
+            <img src="image_3.jpg" style="height: 100%;width: 100%;">
+             <div class="carousel-caption">
+               <div class="container-fluid">
+                 <div class="row justify-content-center align-items-center">
+                   <div class="col">
+                     <h1 class="display-1 fw-bold" style="-webkit-text-stroke: 3px gray; text-shadow: 2px 2px 2px white;">Ultraviolet</h1>
+                   <h2 class="mt-5 mt-md-0 display-2 fw-bold">BEST RESTAURANT</h2>
+                   </div>
+                 </div>
+                  <div class="row mt-5 mt-md-0">
+                    <div class="col-lg-3 mt-5 d-none d-md-block col-md-6"  data-aos="fade-up" data-aos-delay="200" >
+                      <img src="1.jpg" class="rounded-pill mb-4" width="100px" height="100px">
+                      <h5 class="text-warning">Delicious Specialties</h5>
+				              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="col-lg-3 mt-5 col-sm-11 d-none d-lg-block"  data-aos="fade-up" data-aos-delay="200" >
+                      <img src="2.jpg" class="rounded-pill mb-4" width="100px" height="100px">
+                      <h5 class="text-warning">Nutritious &amp; Tasty</h5>
+				              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="col-lg-3 mt-5 d-none d-md-block col-md-6"  data-aos="fade-up" data-aos-delay="200" >
+                      <img src="drink.jpg" class="rounded-pill mb-4" width="100px" height="100px">
+                      <h5 class="text-warning">Hot &amp; Cold drinks</h5>
+				              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="col-lg-3 mt-5 d-none d-lg-block"  data-aos="fade-up" data-aos-delay="200" >
+                      <img src="dessert.jpg" class="rounded-pill mb-4" width="100px" height="100px">
+                      <h5 class="text-warning">Sweet &amp; Cool</h5>
+				              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="carousel-item" style="height: 700px;">
+            <img src="1.jpg" style="height: 100%;width: 100%;">
+            <div class="carousel-caption">
+              <h1 class="display-1 fw-bold" style="-webkit-text-stroke: 3px gray; text-shadow: 2px 2px 2px white;">Ultraviolet</h1>
+              <h2 class="my-lg-5 my-0 display-3 fw-bold">Delicious Specialties</h2>
+              <img src="1.jpg" class="rounded-pill mt-lg-5 mb-lg-4 mt-3 mb-2" width="100px" height="100px">
+              <h5 class="text-warning">Tuscan Grilled</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+          </div>
+          <div class="carousel-item" style="height: 700px;">
+            <img src="2.jpg" style="height: 100%;width: 100%;">
+            <div class="carousel-caption">
+              <h1 class="display-1 fw-bold" style="-webkit-text-stroke: 3px gray; text-shadow: 2px 2px 2px white;">Ultraviolet</h1>
+              <h2 class="my-lg-5 my-0 display-3 fw-bold">Nutritious &amp; Tasty</h2>
+              <img src="2.jpg" class="rounded-pill mt-lg-5 mb-lg-4 mt-3 mb-2" width="100px" height="100px">
+              <h5 class="text-warning">Nutritious &amp; Tasty</h5>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+              </div>
+          </div>
+          <div class="carousel-item" style="height: 700px;">
+            <img src="drink.jpg" style="height: 100%;width: 100%;">
+            <div class="carousel-caption">
+              <h1 class="display-1 fw-bold" style="-webkit-text-stroke: 3px gray; text-shadow: 2px 2px 2px white;">Ultraviolet</h1>
+              <h2 class="my-lg-5 my-0 display-3 fw-bold">Hot &amp; Cold drinks</h2>
+              <img src="drink.jpg" class="rounded-pill mt-lg-5 mb-lg-4 mt-3 mb-2" width="100px" height="100px">
+              <h5 class="text-warning">Hot &amp; Cold drinks</h5>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              </div>
+          </div>
+          <div class="carousel-item" style="height:700px;">
+            <img src="dessert.jpg" style="height: 100%;width: 100%;">
+            <div class="carousel-caption">
+              <h1 class="display-1 fw-bold" style="-webkit-text-stroke: 3px gray; text-shadow: 2px 2px 2px white;">Ultraviolet</h1>
+              <h2 class="my-lg-5 my-0 display-3 fw-bold">Sweet &amp; Cool</h2>
+              <img src="dessert.jpg" class="rounded-pill mt-lg-5 mb-lg-4 mt-3 mb-2" width="100px" height="100px">
+              <h5 class="text-warning">Sweet &amp; Cool</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+          </div>
+          </div>
+        </div>
+        <!---------------------------------Menu Section--------------------------------->
+    <section class="menu-section">
+      <div class="container my-5" data-aos="fade-up">
+    <div class="row" data-aos="fade-up" data-aos-delay="100">   
+          <div class="col-12 text-center">
+            <h2 class="text-secondary fw-bold">Our Tasty Menu</h2>
+          </div>
+        </div>
+    <div class="row mt-4" data-aos="fade-up" data-aos-delay="200">     
+        <div class="col-lg-6">
+            <div class="d-flex">
+            <img src="menu/lobster-bisque.jpg" class="menu-img">
+            <div class="ms-2 mt-2">
+             <a href="#" class="menu-link">Lobster Bisque </a><span class="price-number">$5.95</span>
+             <p class="fst-italic text-secondary"> Lorem, deren, trataro, filede, nerada</p>
+            </div>
+           </div>
+           <br>
+            <div class="d-flex">
+            <img src="menu/cake.jpg" class="menu-img">
+            <div class="ms-2 mt-2">
+             <a href="#" class="menu-link">Crab Cake</a><span class="price-number">$7.95</span>
+             <p class="fst-italic text-secondary">A delicate crab cake served on a toasted roll with lettuce and tartar sauce</p>
+            </div>
+           </div>
+           <br>
+            <div class="d-flex">
+            <img src="menu/tuscan-grilled.jpg" class="menu-img">
+            <div class="ms-2 mt-2">
+             <a href="#" class="menu-link">Tuscan Grilled</a><span class="price-number">$9.95</span>
+             <p class="fst-italic text-secondary">Grilled chicken with provolone, artichoke hearts, and roasted red pesto</p>
+            </div>
+           </div>
+           <br>
+            <div class="d-flex">
+            <img src="menu/mozzarella.jpg" class="menu-img">
+            <div class="ms-2 mt-2">
+             <a href="#" class="menu-link">Mozzarella Stick</a><span class="price-number">$4.95</span>
+             <p class="fst-italic text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            </div>
+           </div>
+           <br>
+            <div class="d-flex">
+            <img src="menu/lobster-roll.jpg" class="menu-img">
+            <div class="ms-2 mt-2">
+             <a href="#" class="menu-link">Lobster Roll</a><span class="price-number">$12.95</span>
+             <p class="fst-italic text-secondary">Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll</p>
+            </div>
+           </div>
+           <br>
+            <div class="d-flex">
+            <img src="menu/plate2.png" class="menu-img">
+            <div class="ms-2 mt-2">
+             <a href="#" class="menu-link">Salad with fish</a><span class="price-number">$12</span>
+             <p class="fst-italic text-secondary">Fish, crisp romaine, tomatoes, and Greek olives</p>
+            </div>
+           </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="d-flex">
+            <img src="menu/bread-barrel.jpg" class="menu-img">
+            <div class="ms-2 mt-2">
+             <a href="#" class="menu-link">Bread Barrel</a><span class="price-number">$6.95</span>
+             <p class="fst-italic text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+           </div>
+           <br>
+            <div class="d-flex">
+            <img src="menu/greek-salad.jpg" class="menu-img">
+            <div class="ms-2 mt-2">
+             <a href="#" class="menu-link">Greek Salad</a><span class="price-number">$9.95</span>
+             <p class="fst-italic text-secondary">Fresh spinach, crisp romaine, tomatoes, and Greek olives</p>
+            </div>
+           </div>
+           <br>
+            <div class="d-flex">
+            <img src="menu/caesar.jpg" class="menu-img">
+            <div class="ms-2 mt-2">
+             <a href="#" class="menu-link">Caesar Selections</a><span class="price-number">$8.95</span>
+             <p class="fst-italic text-secondary">Lorem, deren, trataro, filede, nerada</p>
+            </div>
+           </div>
+           <br>
+            <div class="d-flex">
+            <img src="menu/spinach-salad.jpg" class="menu-img">
+            <div class="ms-2 mt-2">
+             <a href="#" class="menu-link">Spinach Salad</a><span class="price-number">$9.95</span>
+             <p class="fst-italic text-secondary">Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette</p>
+            </div>
+           </div>
+           <br>
+            <div class="d-flex">
+            <img src="menu/dinner-1.jpg" class="menu-img">
+            <div class="ms-2 mt-2">
+             <a href="#" class="menu-link">Grilled Beef</a><span class="price-number">$29</span>
+             <p class="fst-italic text-secondary">Meat, Potatoes, Rice, Tomatoe</p>
+            </div>
+           </div>
+           <br>
+            <div class="d-flex">
+            <img src="menu/plate1.png" class="menu-img">
+            <div class="ms-2 mt-2">
+             <a href="#" class="menu-link">Barbecue salad</a><span class="price-number">$22</span>
+             <p class="fst-italic text-secondary">Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+           </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- ======= Book A Table Section ======= -->
+
+    <section id="book-a-table" class="book-a-table-section my-lg-5 my-0">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title text-center">
+          <h2 class="text-dark fw-bold mb-4">Book a Table</h2>
+        </div>
+        <form data-aos="fade-up" data-aos-delay="100">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 form-group">
+              <div class="input-group mb-3 mb-lg-0">
+                <span class="input-group-text border border-1 border-warning"><i class="fa fa-user text-warning"></i></span>
+                <input type="text" class="form-control border border-1 border-warning" placeholder="Your Name">
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group">
+              <div class="input-group mb-3 mb-lg-0">
+                <span class="input-group-text border border-1 border-warning"><i class="fa fa-envelope text-warning"></i></span>
+                <input type="email" class="form-control  border border-1 border-warning" placeholder="Your Email"> 
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group">
+              <div class="input-group">
+                <span class="input-group-text border border-1 border-warning"><i class="fa fa-phone text-warning"></i></span>
+                <input type="text" class="form-control border border-1 border-warning" placeholder="Your Phone">
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <div class="input-group">
+                <span class="input-group-text border border-1 border-warning"><i class="fa fa-calendar-alt text-warning"></i></span>
+                <input type="datetime" class="form-control  border border-1 border-warning" placeholder="Date">
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <div class="input-group">
+                <span class="input-group-text border border-1 border-warning"><i class="fa fa-clock text-warning"></i></span>
+                <input type="text" class="form-control  border border-1 border-warning" placeholder="Time">
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <div class="input-group">
+                <span class="input-group-text border border-1 border-warning"><i class="fa fa-user-friends text-warning"></i></span>
+               <input type="number" class="form-control  border border-1 border-warning" placeholder="Number of people">
+              </div>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <div class="form-floating mb-4">
+              <textarea class="form-control border border-1 border-warning" placeholder="Message" required style="height: 140px;"></textarea>
+              <label>Message</label>
+            </div>
+          <div class="text-center"><button type="submit" class="btn btn-outline-warning px-5">Submit</button>
+          </div>
+        </form> 
+      </div>
+    </section>
+
+        <!----------------------------Footer Section---------------------------->
+        
+ <footer class="bg-dark text-light pt-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-3 col-md-6 text-center text-md-start">
+        <div class="footer-info">
+          <h1 class="mb-4">Ultraviolet</h1>
+          <p>
+            <i class="fa fa-search-location text-warning me-2 fs-3">
+            </i> A108 Adam Street <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NY 535022, USA<br><br>
+            <i class="fa fa-phone text-warning me-2 fs-3"> </i>    <strong> Phone:</strong> +1 5589 55488 55<br><br>
+            <i class="fa fa-envelope text-warning me-2 fs-3"> </i> <strong>Email:</strong> info@example.com<br>
+          </p>
+          </div>
+          </div>  
+          <div class="col-lg-3 col-md-6 text-center px-5">
+            <h3 class="py-3">Open Hours</h3>
+            <div class="row mt-1 text-center text-md-start">
+              <div class="col">Saturday</div>
+              <div class="col">9:00 - 02:00</div>
+            </div>
+            <div class="row text-center text-md-start">
+              <div class="col">Sunday</div>
+              <div class="col">9:00 - 02:00</div>
+            </div>
+            <div class="row text-center text-md-start">
+              <div class="col">Monday</div>
+              <div class="col">9:00 - 24:00</div>
+            </div>
+            <div class="row text-center text-md-start">
+              <div class="col">Tuesday</div>
+              <div class="col">9:00 - 24:00</div>
+            </div>
+            <div class="row text-center text-md-start">
+              <div class="col">Wednesday</div>
+              <div class="col">9:00 - 24:00</div>
+            </div>
+            <div class="row text-center text-md-start">
+              <div class="col">Thursday</div>
+              <div class="col">9:00 - 24:00</div>
+            </div>
+            <div class="row text-center text-md-start">
+              <div class="col">Friday</div>
+              <div class="col">9:00 - 02:00</div>
+            </div> 
+      </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <h3 class="pb-4 mt-3">Follow Us</h3>
+            <a href="#"><i class="fab fa-twitter icon mt-0"></i></a>
+            <a href="#"><i class="fab fa-facebook-f icon mt-0 px-3 py-3"></i></a><br>
+            <a href="#"><i class="fab fa-instagram icon"></i></a>
+            <a href="#"><i class="fab fa-google icon"></i></a><br>
+            <a href="#"><i class="fab fa-linkedin-in icon"></i></a>
+            <a href="#"><i class="fab fa-telegram-plane icon"></i></a>
+          </div>
+          </div>
+          </div>
+</footer>
+
+<script src="./bootstrap-5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+</body>
+</html>
